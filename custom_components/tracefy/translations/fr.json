@@ -1,0 +1,44 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connexion à Tracefy",
+        "description": "Entrez l'adresse e-mail et le mot de passe que vous utilisez dans l'application Tracefy.",
+        "data": {
+          "email": "Adresse e-mail",
+          "password": "Mot de passe"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Adresse e-mail ou mot de passe invalide.",
+      "cannot_connect": "Impossible de joindre le serveur Tracefy. Vérifiez votre connexion internet.",
+      "unknown": "Une erreur inattendue s'est produite. Consultez les journaux de Home Assistant."
+    },
+    "abort": {
+      "already_configured": "Ce compte Tracefy est déjà configuré."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "speed": { "name": "Vitesse" },
+      "distance": { "name": "Distance totale" },
+      "last_seen": { "name": "Dernière vue" },
+      "direction": { "name": "Direction" },
+      "gps_fix": { "name": "Satellites GPS" },
+      "investigation_status": {
+        "name": "Statut",
+        "state": {
+          "AVAILABLE": "Disponible",
+          "MISSING": "Disparu",
+          "IN_RECOVERY": "En récupération"
+        }
+      }
+    },
+    "binary_sensor": {
+      "moving": { "name": "En mouvement" },
+      "battery_connected": { "name": "En charge" },
+      "in_investigation": { "name": "Signalé volé" }
+    }
+  }
+}

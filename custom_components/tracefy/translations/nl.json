@@ -1,0 +1,44 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Inloggen bij Tracefy",
+        "description": "Voer het e-mailadres en wachtwoord in dat je gebruikt in de Tracefy-app.",
+        "data": {
+          "email": "E-mailadres",
+          "password": "Wachtwoord"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Ongeldig e-mailadres of wachtwoord.",
+      "cannot_connect": "Kan de Tracefy-server niet bereiken. Controleer je internetverbinding.",
+      "unknown": "Er is een onverwachte fout opgetreden. Bekijk de Home Assistant-logboeken."
+    },
+    "abort": {
+      "already_configured": "Dit Tracefy-account is al geconfigureerd."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "speed": { "name": "Snelheid" },
+      "distance": { "name": "Totale afstand" },
+      "last_seen": { "name": "Laatst gezien" },
+      "direction": { "name": "Richting" },
+      "gps_fix": { "name": "GPS-satellieten" },
+      "investigation_status": {
+        "name": "Status",
+        "state": {
+          "AVAILABLE": "Beschikbaar",
+          "MISSING": "Vermist",
+          "IN_RECOVERY": "In opsporing"
+        }
+      }
+    },
+    "binary_sensor": {
+      "moving": { "name": "In beweging" },
+      "battery_connected": { "name": "Opladen" },
+      "in_investigation": { "name": "Als gestolen gemeld" }
+    }
+  }
+}

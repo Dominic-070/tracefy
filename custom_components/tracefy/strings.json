@@ -1,0 +1,44 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Log in to Tracefy",
+        "description": "Enter the email address and password you use in the Tracefy app.",
+        "data": {
+          "email": "Email address",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid email address or password.",
+      "cannot_connect": "Unable to reach the Tracefy server. Check your internet connection.",
+      "unknown": "An unexpected error occurred. Check the Home Assistant logs."
+    },
+    "abort": {
+      "already_configured": "This Tracefy account is already configured."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "speed": { "name": "Speed" },
+      "distance": { "name": "Total distance" },
+      "last_seen": { "name": "Last seen" },
+      "direction": { "name": "Direction" },
+      "gps_fix": { "name": "GPS satellites" },
+      "investigation_status": {
+        "name": "Status",
+        "state": {
+          "AVAILABLE": "Available",
+          "MISSING": "Missing",
+          "IN_RECOVERY": "In recovery"
+        }
+      }
+    },
+    "binary_sensor": {
+      "moving": { "name": "Moving" },
+      "battery_connected": { "name": "Charging" },
+      "in_investigation": { "name": "Reported stolen" }
+    }
+  }
+}
