@@ -1,7 +1,7 @@
 {
   "domain": "tracefy",
   "name": "Tracefy GPS Tracker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "documentation": "https://github.com/Dominic-070/tracefy",
   "issue_tracker": "https://github.com/Dominic-070/tracefy/issues",
   "config_flow": true,
